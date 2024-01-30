@@ -1,0 +1,221 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sim" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1039,669" sap2010:WorkflowViewState.IdRef="Sim_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sim" sap:VirtualizedContainerService.HintSize="478,604" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="436,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hello Hứa Trung Hiếu&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ĐÃ CHẠY&quot;]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="418,1326" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,1234" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Tất cả'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="1974, 826, 578, 68" ElementType="Text" FriendlyName="'Tất cả'" FullSelectorArgument="&lt;webctrl parentid='s2id_select_khuvuc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='s2id_select_khuvuc' tag='SPAN' type='' class='select2-chosen' aaname='Tất cả' check:innerText='Tất cả' /&gt;" Guid="2fe6ea17-c470-4eef-b860-ee18136657a2" ImageBase64="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" InformativeScreenshot="340ee887d821734b452eb5c2a7a1dc54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'KV2 (TP Hồ Chí Minh)'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="1966, 1109, 596, 51" FriendlyName="'KV2 (TP Hồ Chí Minh)'" FullSelectorArgument="&lt;webctrl aaname='KV2 (TP Hồ Chí Minh)' parentid='select2-drop' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='KV2 (TP Hồ Chí Minh)' parentid='select2-drop' tag='DIV' type='' class='select2-result-label' check:innerText='KV2 (TP Hồ Chí Minh)' /&gt;" Guid="5376e7f8-01bf-4c44-8bf9-44c199de1ba8" ImageBase64="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" InformativeScreenshot="eb672580b198417c6b83e0240a1158af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Tất cả'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="739, 826, 231, 68" ElementType="Text" FriendlyName="'Tất cả'" FullSelectorArgument="&lt;webctrl parentid='s2id_select_loaithuebao' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='s2id_select_loaithuebao' tag='SPAN' type='' class='select2-chosen' aaname='Tất cả' check:innerText='Tất cả' /&gt;" Guid="3a24dc44-687b-4f51-9319-a57dfa72b09e" ImageBase64="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" InformativeScreenshot="b6fbc497a70a1b96a3d02492cded0398.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Trả trước'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="731, 1006, 284, 51" FriendlyName="'Trả trước'" FullSelectorArgument="&lt;webctrl aaname='Trả trước' parentid='select2-drop' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trả trước' parentid='select2-drop' tag='DIV' type='' class='select2-result-label' check:innerText='Trả trước' /&gt;" Guid="19e24d38-77a8-4433-bcbb-8566bccf44c0" ImageBase64="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" InformativeScreenshot="6581acbd033e1da99667711fe6a3db1b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Tình trạng'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="1062, 826, 515, 68" ElementType="Text" FriendlyName="'Tình trạng'" FullSelectorArgument="&lt;webctrl parentid='s2id_select_tinhtrangthuebao' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='s2id_select_tinhtrangthuebao' tag='SPAN' type='' class='select2-chosen' aaname='Tình trạng' check:innerText='Tình trạng' /&gt;" Guid="1378cf5b-454b-448a-b539-3e7dcf4010b8" ImageBase64="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" InformativeScreenshot="fddeb6bfaae7b9003a5a7c770bef456c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Trong kho'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/" DesignTimeRectangle="1054, 1058, 566, 51" FriendlyName="'Trong kho'" FullSelectorArgument="&lt;webctrl aaname='Trong kho' parentid='select2-drop' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trong kho' parentid='select2-drop' tag='DIV' type='' class='select2-result-label' check:innerText='Trong kho' /&gt;" Guid="a2b89b03-9543-41fe-9771-b0e407f267a6" ImageBase64="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" InformativeScreenshot="690476b1d250061b70efd15b9a694ae7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,192" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Kho sim chính thức của nhà mạng MobiFone" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,817" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    <Variable x:TypeArguments="sd:DataTable" Name="dtSim" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtSim]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='STT' ReferenceIdx='0' Name='STT'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Số thuê bao' ReferenceIdx='1' Name='Số thuê bao'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Mệnh của số' ReferenceIdx='2' Name='Mệnh của số'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Phí hòa mạng' ReferenceIdx='3' Name='Phí hòa mạng'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Loại TB,Cước cam kết (Vnđ/Tháng)' ReferenceIdx='4' Name='Loại TB,Cước cam kết (Vnđ/Tháng)'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Tình trạng' ReferenceIdx='5' Name='Tình trạng'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Địa điểm hòa mạng' ReferenceIdx='6' Name='Địa điểm hòa mạng'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Đăng ký giữ số' ReferenceIdx='7' Name='Đăng ký giữ số'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='STT' attr='text' /&gt;&lt;column name='Số thuê bao' attr='text' /&gt;&lt;column name='Mệnh của số' attr='text' /&gt;&lt;column name='Phí hòa mạng' attr='text' /&gt;&lt;column name='Loại TB,Cước cam kết (Vnđ/Tháng)' attr='text' /&gt;&lt;column name='Tình trạng' attr='text' /&gt;&lt;column name='Địa điểm hòa mạng' attr='text' /&gt;&lt;column name='Đăng ký giữ số' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="53a8baed-11a7-435a-ae4d-482ce518c7fb" Version="V1">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://chonso.mobifone.vn/web/tracuu/tim-sim-phong-thuy.html?rf=bnsimphongthuy" DesignTimeRectangle="1816, 1545, 65, 60" ElementType="Text" FriendlyName="'» Next'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;» &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Next &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='searchResultByFengShui' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;» &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Next &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='searchResultByFengShui' tag='A' type='' class='page-link' check:innerText='»&amp;#xA;Next' /&gt;" Guid="da8fd878-0466-45ef-bb7f-eaa69603b159" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAABACAYAAABMQLqaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAJcSURBVHhe7Zsxa9tQFIX7a0VGUzp5aAYtIdBFi+kP6BIvKdQd68Ud0iH/QB4MUQfjgAdjU4hvdSzfF0U+hiwWz/L5QMszCjofR/cJwvtg4gBJIRyVsl6vbT6f22w2s+l0anmen/2FHMiDXMh3DCoFN7E/2rULORkHUoqiCDctFgvbbDa23W73v543yIE8yOUZkbfJGyneEFQMN3cZ5ENO5G02JkjBO+b2ui7EQU7PXJ8xQYq3BNW6JPxVqrclSPEqXUpLHG8L8jtBim+7XRmq7wV5kRv5nSAFP+C6RJrZJaVEUgiSQpAUgqQQJIUgKQRJIUgKQVIIkkKQFIKkECSFICkESSFICkFSCJFIWdkkSyxJejZ4XO2XJpZdlWsfB+ZLbRGJlJLnsd1AwlVmk72E5a+bUlS5dju2ZbXUCvFIKSl+ppWEdGTFy27FRikalFj64/DfmaciKin2Utj950rC9fe9hKd7u4aopG/Dlh4nLikgH1p/J+F1vuR3/apBLc2X+KRg6H6p2pJ8GtruCf49WLYTlVjv2+mfKT4pTyNLMXDRlD9VLcKsqQ3hUxKZlNfB2vv6WHamxHel+nZ9YqKSErbgsPssbXxbSQqDtwXikRK+U1Ib/a2WVr+zhqR2iEQK+6J9sEGvXLvoL9qIkBSCpBAkhSApBEkhSApBUgiSQpAUgqQQJIUgKQRJIRyVogML5MCCjraQoy06BEUOQem4HDkuB7wtqFLXxSCfj4x6S8AbKUBHcIkU4I3p+tVsiEOlALxjuAkV8+363C/kQB7kqs+QJkelXDKScoDZf5BirAyAwB8wAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim online của MobiFone: Sim số đẹp - Sim phong thủy - Sim giá gốc - Chọn số theo nhu cầu' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="296, 966, 2280, 3699" FriendlyName="'STT Số'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="a2b5aee7-0c10-4b75-a3df-08025f0db958" InformativeScreenshot="823e01a98e477e0b6884f880a22cc9cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kho sim online của MobiFone: Sim số đẹp - Sim phong thủy - Sim giá gốc - Chọn số theo nhu cầu' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,526" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\User\Desktop\DSSIM.xlsx">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,254" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Sheet2&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dtSim]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-13, -13, 2906, 1730" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADAUExURc/w/L/r+5/l+hC+82DM9WDU99/2/VDQ9vP8/t/1/c/y/b/u/DDH9IDX90DF9HDY+J/h+a/m+kzL9YDd+e/6/ljP9avn+u/7/s/x/J/k+r/t+7/s+4DY91DH9Hzb+Of4/nDR9ojd+CDD9FDJ9Lfq+2TS9tPx/HzZ9xS18K/n+nDS9mDO9UDC8wCx8EDL9VDP9hCz8AC68kDI9ACu7////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdwHQMAAAA2dFJOU///////////////////////////////////////////////////////////////////////AKGPTjEAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACuSURBVChTPY2JEoIwDESDKIeoqAje930UqVn//9fcouPONHl5k7byXp9f/wy3kUTD3/DNUYq654dJkdckqyczAxNNHUpprW0AWcnSIjsRYtwhtgAOTgQIrc8FIKhFiMT6bYwTmo4TGe+maPt2FyC10jNz9MwVe2PMHQsjD/Xw0AGPahNdpeiiqRtIpZWQKJYYOB55I4iq3FTjWLXy+Ee/ojhxYGd1r3D17fQ/F/kA7zEnV5tHYpsAAAAASUVORK5CYII=" InformativeScreenshot="6045ff6a54733633b5cc0fb1e90ef75a.png" Selector="&lt;html app='chrome.exe' title='Kho sim chính thức của nhà mạng MobiFone' /&gt;" Url="https://chonso.mobifone.vn/" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

@@ -1,0 +1,55 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Vietlot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "page&Sequence_18",
+        "ExtractDataTable&Sequence_18",
+        "dDate&Sequence_18",
+        "Ki&Sequence_19",
+        "one&Sequence_19",
+        "two&Sequence_19",
+        "three&Sequence_19",
+        "four&Sequence_19",
+        "five&Sequence_19",
+        "six&Sequence_19",
+        "special&Sequence_19",
+        "chon&Sequence_1",
+        "link655&Sequence_1",
+        "link645&Sequence_1",
+        "dDate&Sequence_3",
+        "Ki&Sequence_14",
+        "one&Sequence_14",
+        "two&Sequence_14",
+        "three&Sequence_14",
+        "four&Sequence_14",
+        "five&Sequence_14",
+        "six&Sequence_14",
+        "special&Sequence_14",
+        "ExtractDataTable&Sequence_3",
+        "dtVietlot&Sequence_1",
+        "page&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

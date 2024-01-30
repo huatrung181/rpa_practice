@@ -1,0 +1,456 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1473,3268" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Cào số vietlot" sap:VirtualizedContainerService.HintSize="1483,3203" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtVietlot" />
+      <Variable x:TypeArguments="x:String" Name="link645" />
+      <Variable x:TypeArguments="x:String" Name="link655" />
+      <Variable x:TypeArguments="x:String" Name="chon">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">645</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dtVietlot]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1421,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Kỳ&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_2&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_3&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_4&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_5&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bộ_x0020_6&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Final&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="1421,83" sap2010:WorkflowViewState.IdRef="Assign_21">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[link645]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-645</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1421,83" sap2010:WorkflowViewState.IdRef="Assign_22">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[link655]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[chon.Equals(&quot;645&quot;)]" sap:VirtualizedContainerService.HintSize="1421,2746" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="688,2584" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vietlott" sap:VirtualizedContainerService.HintSize="626,2473" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="97d15dc5-e522-4481-9ec7-344940e0a830" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2255" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Default="1" Name="page" />
+                    <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    <Variable x:TypeArguments="x:String" Name="dDate" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="530,83" sap2010:WorkflowViewState.IdRef="Assign_23">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[page]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ngày' ReferenceIdx='0' Name='Ngày'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Kỳ' ReferenceIdx='1' Name='Kỳ'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Bộ số' ReferenceIdx='2' Name='Bộ số'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Ngày' attr='text' /&gt;&lt;column name='Kỳ' attr='text' /&gt;&lt;column name='Bộ số' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="530,158" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="Page" MaximumResults="50" ScopeIdentifier="97d15dc5-e522-4481-9ec7-344940e0a830" Version="V1">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655" DesignTimeRectangle="2234, 842, 64, 68" ElementType="Text" FriendlyName="'»'" FullSelectorArgument="&lt;webctrl aaname='»' parentid='divResultContent' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='»' parentid='divResultContent' tag='A' type='' class='' check:innerText='»' /&gt;" Guid="29ae4e57-e127-483c-bbe4-841dff42602c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAABICAYAAABP0VPJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAVBSURBVHhe7Zy7btxGFIbzTq78Eq7yHH6AJFXgPkXgIp2LVGnizkhhI4BjBxBSRIXhILbu97u0uqxW0upkP4o/Pcvl8rIkZ5cb/sAAwiw5c/6f55yZOaT9lbUYQitIDN4E6fV6dnFxYcfHx7a3t2dbW1u2trZmKysrtrS0FDT+po/fuIZruYd7faFWQbrdbkBqe3t7iHjRxr2MwViMWScqF+Tu7s46nY7t7u7a8vLyEDFIHR0d2fn5uV1fX9vt7a3d39+Hd1rwN338xjVcyz3uGIzJ2MzBXFWjMkH6/X5gpEsA4/f39wO3d4kXBfcyBmO5IjMXczJ3VahEkMvLy+CpydD19XU7PT0tJcI4MCZjM4fmY25sqAKlBMFlievV1dXAMBLi2dlZ+Gv9YC7mZG5swJayYTSxICQ31ysODw9r8YgsMCdzyw5sKpN4JxKEeN7c3AwM4AlV5a5lgA3yFmzDxklQWBCSmOJ3Z2en0oRWFtiCTdiGjdhaFIUEYQI9hYODg7B39oBt8t6iouQWhH2BxCBmZx3KK9iM7XmRS5Crq6soZ8yyZ8QhT8F2OORBpiA3NzdRXJLBmwathHCASxYyBZHrbWxsTGVZLQtsxnY45An1VEFISNoqc75oKrAdDnDJSrJjBcG9OIYz0MnJSdjbXMABLnBKC52xgrAN1gDzAj1guI1DoiC4mDZfebNzEwAXOMFtXApIFIQ6BDc2cVXJglYdOCZhRBDiS95Rd3VqGoCTvCQpl4wIQq2BGyi+zCtUxIJrHCOC6OIi292mAW7jHvqQIEo6FFvmHSpqxReNIUG01FK7nHfAEa7xJXhIEJ1ZJi2uNAlwhCucXUSCUP7Xu5NZKvrUBTjCFc5wFyJBKMFxAUfl/wtU0nBLoJEgWm6bVO8oC9VL3OU3EkQ/+nyNMG3ANe4EkSBKqPN0dsmCthluYo0EURElT1VpXgBXOMNdiATRRqWOF8hfcGOHn/61hcVBW1KNJanPD+AKZ3cjGgmiJbfuMmHv45/29Tev7NF3b+zl7sPyntTnA3CFM9yFSBB+oNWPa1v85Td7NBDg8Y9/21bAP6nPD+K8pyDIAL0Ve/5s4BEDAZ6+CY8JSX0eMFYQXyEjJIbJpwWvoZMaMn6SqoukMOnbP7/6C53UpOp/2b2yhZ9D8i8+2sNndU7fTx+s+KvqYkhddn1vzHqL7+xJEB5v7Y+wUvml73d7PVrMqhypGzOvW/fuZ/vh+4cE+u37cL6kvpqRunX3d7hLCgu/oSLICRIPd76O/72/3trjWFj4DhUh9fjvp0DUt97lmXU6g9ZV8k7qqx+ZBSKgxNqWEEO0ReaYIFqG3I3KvEIb0fg2Y0gQ0L6oikHLb9LF8wI9dHe5FUYEYTvbvuyOof0cIob2g5kEaAluP6kKQXxpgPajuxDtZ5kJaD/cjQH30hmniauOVhU4pIWKkCkIIDvrqFx/vaQ6qN6B7XlXy1yCALa77T8PiYGEJFFm2VPkGdialUTjKCQIYAJt2ojLWfraCFuU77CxqBigsCCA4opyCk/BLcFNC9gg78W2SYtcEwkCOCQpg9OI2Wksy8ypfEHDpjKH0okFAbz5YhusYgtPyOcXSMwlr8AGbCn75rGUIALu6noL8UutoQ6PYUzGVh6jMXdVYVuJIICERhJT8YXGVpnaJfFcRhzuZQzG0lGCxlzMWWVir0wQAZfFSJ6aa7wIUIdgX8D5gvK/KxR/08dvXMO1rsA0xmRs5qjjxXzlgrgguRHXkNI7n0ka9zIGY9VdxatVEBftf7nTULSCDMHsP1UgR3sfxMQsAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vietlott' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1478, -1209, 1110, 1483" FriendlyName="'Ngày Kỳ Bộ số'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="ff0f802a-1378-440d-a1c9-5341014ba56c" InformativeScreenshot="2a7d670fb279e6cac42e4f4024981068.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vietlott' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1529" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1411" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="Ki" />
+                            <Variable x:TypeArguments="x:String" Name="one" />
+                            <Variable x:TypeArguments="x:String" Name="two" />
+                            <Variable x:TypeArguments="x:String" Name="three" />
+                            <Variable x:TypeArguments="x:String" Name="four" />
+                            <Variable x:TypeArguments="x:String" Name="five" />
+                            <Variable x:TypeArguments="x:String" Name="six" />
+                            <Variable x:TypeArguments="x:String" Name="special" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[dDate]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Ngày").ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Ki]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Kỳ").ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_26">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[one]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(0,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_27">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[two]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(2,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_28">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[three]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(4,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_29">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[four]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(6,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[five]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(8,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_31">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[six]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(10,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_32">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[special]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dDate, Ki, one, two, three, four, five, six, special}]" DataTable="[dtVietlot]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,94" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Test&quot;]" />
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtVietlot]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="530,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="645" WorkbookPath="C:\Users\User\Desktop\vietlot.xlsx" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-13, -13, 2906, 1730" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a87aaa23058ca0728950e13d7f2a7f74.png" Selector="&lt;html app='chrome.exe' title='Vietlott' /&gt;" Url="[link645]" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="688,2584" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vietlott" sap:VirtualizedContainerService.HintSize="626,2473" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="97d15dc5-e522-4481-9ec7-344940e0a830" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2255" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Name="page">
+                      <Variable.Default>
+                        <Literal x:TypeArguments="x:Int32" Value="1" />
+                      </Variable.Default>
+                    </Variable>
+                    <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    <Variable x:TypeArguments="x:String" Name="dDate" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="530,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[page]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ngày' ReferenceIdx='0' Name='Ngày'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Kỳ' ReferenceIdx='1' Name='Kỳ'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Bộ số' ReferenceIdx='2' Name='Bộ số'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Ngày' attr='text' /&gt;&lt;column name='Kỳ' attr='text' /&gt;&lt;column name='Bộ số' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="530,158" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="Page" MaximumResults="50" ScopeIdentifier="97d15dc5-e522-4481-9ec7-344940e0a830" Version="V1">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655" DesignTimeRectangle="2234, 842, 64, 68" ElementType="Text" FriendlyName="'»'" FullSelectorArgument="&lt;webctrl aaname='»' parentid='divResultContent' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='»' parentid='divResultContent' tag='A' type='' class='' check:innerText='»' /&gt;" Guid="29ae4e57-e127-483c-bbe4-841dff42602c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAABICAYAAABP0VPJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAVBSURBVHhe7Zy7btxGFIbzTq78Eq7yHH6AJFXgPkXgIp2LVGnizkhhI4BjBxBSRIXhILbu97u0uqxW0upkP4o/Pcvl8rIkZ5cb/sAAwiw5c/6f55yZOaT9lbUYQitIDN4E6fV6dnFxYcfHx7a3t2dbW1u2trZmKysrtrS0FDT+po/fuIZruYd7faFWQbrdbkBqe3t7iHjRxr2MwViMWScqF+Tu7s46nY7t7u7a8vLyEDFIHR0d2fn5uV1fX9vt7a3d39+Hd1rwN338xjVcyz3uGIzJ2MzBXFWjMkH6/X5gpEsA4/f39wO3d4kXBfcyBmO5IjMXczJ3VahEkMvLy+CpydD19XU7PT0tJcI4MCZjM4fmY25sqAKlBMFlievV1dXAMBLi2dlZ+Gv9YC7mZG5swJayYTSxICQ31ysODw9r8YgsMCdzyw5sKpN4JxKEeN7c3AwM4AlV5a5lgA3yFmzDxklQWBCSmOJ3Z2en0oRWFtiCTdiGjdhaFIUEYQI9hYODg7B39oBt8t6iouQWhH2BxCBmZx3KK9iM7XmRS5Crq6soZ8yyZ8QhT8F2OORBpiA3NzdRXJLBmwathHCASxYyBZHrbWxsTGVZLQtsxnY45An1VEFISNoqc75oKrAdDnDJSrJjBcG9OIYz0MnJSdjbXMABLnBKC52xgrAN1gDzAj1guI1DoiC4mDZfebNzEwAXOMFtXApIFIQ6BDc2cVXJglYdOCZhRBDiS95Rd3VqGoCTvCQpl4wIQq2BGyi+zCtUxIJrHCOC6OIi292mAW7jHvqQIEo6FFvmHSpqxReNIUG01FK7nHfAEa7xJXhIEJ1ZJi2uNAlwhCucXUSCUP7Xu5NZKvrUBTjCFc5wFyJBKMFxAUfl/wtU0nBLoJEgWm6bVO8oC9VL3OU3EkQ/+nyNMG3ANe4EkSBKqPN0dsmCthluYo0EURElT1VpXgBXOMNdiATRRqWOF8hfcGOHn/61hcVBW1KNJanPD+AKZ3cjGgmiJbfuMmHv45/29Tev7NF3b+zl7sPyntTnA3CFM9yFSBB+oNWPa1v85Td7NBDg8Y9/21bAP6nPD+K8pyDIAL0Ve/5s4BEDAZ6+CY8JSX0eMFYQXyEjJIbJpwWvoZMaMn6SqoukMOnbP7/6C53UpOp/2b2yhZ9D8i8+2sNndU7fTx+s+KvqYkhddn1vzHqL7+xJEB5v7Y+wUvml73d7PVrMqhypGzOvW/fuZ/vh+4cE+u37cL6kvpqRunX3d7hLCgu/oSLICRIPd76O/72/3trjWFj4DhUh9fjvp0DUt97lmXU6g9ZV8k7qqx+ZBSKgxNqWEEO0ReaYIFqG3I3KvEIb0fg2Y0gQ0L6oikHLb9LF8wI9dHe5FUYEYTvbvuyOof0cIob2g5kEaAluP6kKQXxpgPajuxDtZ5kJaD/cjQH30hmniauOVhU4pIWKkCkIIDvrqFx/vaQ6qN6B7XlXy1yCALa77T8PiYGEJFFm2VPkGdialUTjKCQIYAJt2ojLWfraCFuU77CxqBigsCCA4opyCk/BLcFNC9gg78W2SYtcEwkCOCQpg9OI2Wksy8ypfEHDpjKH0okFAbz5YhusYgtPyOcXSMwlr8AGbCn75rGUIALu6noL8UutoQ6PYUzGVh6jMXdVYVuJIICERhJT8YXGVpnaJfFcRhzuZQzG0lGCxlzMWWVir0wQAZfFSJ6aa7wIUIdgX8D5gvK/KxR/08dvXMO1rsA0xmRs5qjjxXzlgrgguRHXkNI7n0ka9zIGY9VdxatVEBftf7nTULSCDMHsP1UgR3sfxMQsAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vietlott' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1478, -1209, 1110, 1483" FriendlyName="'Ngày Kỳ Bộ số'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="ff0f802a-1378-440d-a1c9-5341014ba56c" InformativeScreenshot="2a7d670fb279e6cac42e4f4024981068.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vietlott' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1529" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1411" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="Ki" />
+                            <Variable x:TypeArguments="x:String" Name="one" />
+                            <Variable x:TypeArguments="x:String" Name="two" />
+                            <Variable x:TypeArguments="x:String" Name="three" />
+                            <Variable x:TypeArguments="x:String" Name="four" />
+                            <Variable x:TypeArguments="x:String" Name="five" />
+                            <Variable x:TypeArguments="x:String" Name="six" />
+                            <Variable x:TypeArguments="x:String" Name="special" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[dDate]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Ngày").ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_13">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Ki]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Kỳ").ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_14">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[one]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(0,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[two]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(2,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_16">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[three]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(4,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[four]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(6,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[five]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(8,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_19">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[six]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(10,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_20">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[special]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Bộ số").ToString.Substring(14,2)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dDate, Ki, one, two, three, four, five, six, special}]" DataTable="[dtVietlot]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,94" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Test&quot;]" />
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtVietlot]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="530,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="655" WorkbookPath="C:\Users\User\Desktop\vietlot.xlsx" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-13, -13, 2906, 1730" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a87aaa23058ca0728950e13d7f2a7f74.png" Selector="&lt;html app='chrome.exe' title='Vietlott' /&gt;" Url="[link655]" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
