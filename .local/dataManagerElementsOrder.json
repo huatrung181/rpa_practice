@@ -50,6 +50,132 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Buoi2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_4",
+        "myFile&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sim.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_2",
+        "dtSim&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Dispatcher.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Extractable&Sequence_1",
+        "Name&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Buoi7.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "text&Sequence_1",
+        "newStr&Sequence_1",
+        "strBody&Sequence_1",
+        "dtData&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Buoi5.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtW4&Sequence_1",
+        "aaaa&Sequence_4",
+        "FirstName&Sequence_3",
+        "LastName&Sequence_3",
+        "Address&Sequence_3",
+        "City&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Buoi4.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtResult&Sequence_1",
+        "email_address&Sequence_10",
+        "content&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Buoi3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtMydata&Sequence_1",
+        "out_dtData&Sequence_1",
+        "mydata&Sequence_1",
+        "index&Sequence_1",
+        "ExtractDataTable&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Xoamail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "varA&Sequence_1",
+        "varB&Sequence_1",
+        "rs&Sequence_1",
+        "mDate&Sequence_1",
+        "mail_address&Sequence_1",
+        "time&Sequence_1",
+        "selectedTime&Sequence_1",
+        "popup&Sequence_21"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueItems&Sequence_1",
+        "str1&Sequence_1",
+        "Extractable&Sequence_1",
+        "Outdatatable&Sequence_1",
+        "Dt&Sequence_3",
+        "TransactionItem&Sequence_2",
+        "Name&Sequence_2",
+        "Abbreviations&Sequence_2",
+        "MST&Sequence_2",
+        "Address&Sequence_2",
+        "RowCount&Sequence_2",
+        "variable1&Sequence_2",
+        "newRow&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }

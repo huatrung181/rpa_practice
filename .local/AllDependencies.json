@@ -977,15 +977,6 @@
           }
         }
       },
-      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
-        "type": "package",
-        "compile": {
-          "lib/net20/_._": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
-        }
-      },
       "Microsoft.Rest.ClientRuntime/2.3.21": {
         "type": "package",
         "dependencies": {
@@ -1090,15 +1081,6 @@
         },
         "build": {
           "build/_._": {}
-        }
-      },
-      "MicrosoftOfficeCore/15.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net35/_._": {}
-        },
-        "runtime": {
-          "lib/net35/Office.dll": {}
         }
       },
       "MimeKit/3.1.1": {
@@ -3243,7 +3225,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win10-x64": {
+    ".NETFramework,Version=v4.6.1/win-x86": {
       "BalaReva.EasyExcel.Activities/29.1.2": {
         "type": "package",
         "dependencies": {
@@ -4219,15 +4201,6 @@
           }
         }
       },
-      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
-        "type": "package",
-        "compile": {
-          "lib/net20/_._": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
-        }
-      },
       "Microsoft.Rest.ClientRuntime/2.3.21": {
         "type": "package",
         "dependencies": {
@@ -4312,7 +4285,7 @@
           }
         },
         "native": {
-          "runtimes/win-x64/native/_._": {}
+          "runtimes/win-x86/native/_._": {}
         },
         "build": {
           "build/_._": {}
@@ -4329,15 +4302,6 @@
         },
         "build": {
           "build/_._": {}
-        }
-      },
-      "MicrosoftOfficeCore/15.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net35/_._": {}
-        },
-        "runtime": {
-          "lib/net35/Office.dll": {}
         }
       },
       "MimeKit/3.1.1": {
@@ -7698,18 +7662,6 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
-      "sha512": "DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
-      "type": "package",
-      "path": "microsoft.office.interop.excel/15.0.4795.1000",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20/Microsoft.Office.Interop.Excel.dll",
-        "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
-        "microsoft.office.interop.excel.nuspec"
-      ]
-    },
     "Microsoft.Rest.ClientRuntime/2.3.21": {
       "sha512": "KDYlgTyO693V6pi6SGk9eg+dDvKjuOgmkapbHdpnB1SmTPKpvWxVLIMyARJsCFLfB6axyURUJHOfvxBQ0yJKeg==",
       "type": "package",
@@ -8033,18 +7985,6 @@
         "ref/netstandard2.0/en/Windows.UI.Xaml.Hosting.HostingContract.xml",
         "ref/netstandard2.0/en/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.xml",
         "ref/netstandard2.0/windows.winmd"
-      ]
-    },
-    "MicrosoftOfficeCore/15.0.0": {
-      "sha512": "/KgYw8uvv0Ut8FPvyEa1XJ/TrLSRgvTv3JgC2IT0/8NwoICzbEJWfmfwsE6Dwi8WH0jVkTEO7zRvGvaKqUOhqQ==",
-      "type": "package",
-      "path": "microsoftofficecore/15.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Office.dll",
-        "microsoftofficecore.15.0.0.nupkg.sha512",
-        "microsoftofficecore.nuspec"
       ]
     },
     "MimeKit/3.1.1": {
@@ -11267,15 +11207,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\X1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "BaiTap",
       "projectName": "BaiTap",
-      "projectPath": "D:\\Project RPA\\BaiTap\\.local",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Project RPA\\BaiTap\\.local"
+      "projectPath": "D:\\PERSONAL\\MyGIT\\rpa_practice\\.local",
+      "packagesPath": "C:\\Users\\X1\\.nuget\\packages\\",
+      "outputPath": "D:\\PERSONAL\\MyGIT\\rpa_practice\\.local",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ]
     },
     "frameworks": {
       "net461": {
@@ -11321,13 +11265,35 @@
             "version": "[22.4.5, 22.4.5]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\X1\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
-      "win10-x64": {
+      "win-x86": {
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Office.Interop.Excel. No packages exist with this id in source(s): C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\, C:\\Users\\X1\\AppData\\Local\\Programs\\UiPath\\Studio\\Packages, https://gallery.uipath.com/api/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json",
+      "libraryId": "Microsoft.Office.Interop.Excel",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1",
+        ".NETFramework,Version=v4.6.1/win-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MicrosoftOfficeCore. No packages exist with this id in source(s): C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\, C:\\Users\\X1\\AppData\\Local\\Programs\\UiPath\\Studio\\Packages, https://gallery.uipath.com/api/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json",
+      "libraryId": "MicrosoftOfficeCore",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1",
+        ".NETFramework,Version=v4.6.1/win-x86"
+      ]
+    }
+  ]
 }
